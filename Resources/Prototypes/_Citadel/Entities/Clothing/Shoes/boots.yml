@@ -1,0 +1,26 @@
+- type: entity
+  parent: [ClothingShoesMilitaryBase, BaseSecurityContraband]
+  id: ClothingShoesCivilProtection
+  name: black boots
+  description: Thick and durable black boots worn by Alliance forces.
+  components:
+  - type: Sprite
+    sprite: _Citadel/Clothing/Shoes/Boots/civilprotectionboots.rsi
+  - type: Clothing
+    sprite: _Citadel/Clothing/Shoes/Boots/civilprotectionboots.rsi
+  - type: ClothingSlowOnDamageModifier
+    modifier: 0.5
+  - type: FootstepModifier
+    footstepSoundCollection:
+      collection: FootstepBoots
+      
+- type: entity
+  parent: ClothingShoesBaseButcherable
+  id: ClothingShoesWorkBoots
+  name: boots
+  description: Old boots, usually given to any and all citizens.
+  components:
+  - type: Sprite
+    sprite: _Citadel/Clothing/Shoes/Boots/workboots.rsi
+  - type: Clothing
+    sprite: _Citadel/Clothing/Shoes/Boots/workboots.rsi

@@ -1,0 +1,287 @@
+- type: entity
+  parent: [ClothingOuterArmorBase, AllowSuitStorageClothing, BaseSecurityContraband]
+  id: ClothingOuterVestCivilProtection
+  name: civil protection vest
+  description: A one size fits all type of vest, made with kevlar. Encases your upper chest to provide good protection.
+  components:
+  - type: Sprite
+    sprite: _Citadel/Clothing/OuterClothing/Armor/civilprotectionvest.rsi
+  - type: Clothing
+    sprite: _Citadel/Clothing/OuterClothing/Armor/civilprotectionvest.rsi
+  - type: Pierceable
+    level: Metal
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.7
+        Slash: 0.7
+        Piercing: 0.7
+        Heat: 0.8
+  - type: ExplosionResistance
+    damageCoefficient: 0.8
+  - type: StaticPrice
+    price: 1500
+
+- type: entity
+  parent: [ClothingOuterArmorBase, AllowSuitStorageClothing, BaseSecurityContraband]
+  id: ClothingOuterVestCivilProtectionDL
+  name: divisional lead vest
+  description: A variant of the standard officer's vest dyed with red highlights to broadcast the authority of its wearer.
+  components:
+  - type: Sprite
+    sprite: _Citadel/Clothing/OuterClothing/Armor/civilprotectionvestdl.rsi
+  - type: Clothing
+    sprite: _Citadel/Clothing/OuterClothing/Armor/civilprotectionvestdl.rsi
+  - type: Pierceable
+    level: Metal
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.7
+        Slash: 0.7
+        Piercing: 0.7
+        Heat: 0.8
+  - type: ExplosionResistance
+    damageCoefficient: 0.8
+  - type: StaticPrice
+    price: 1500
+
+- type: entity
+  parent: [ClothingOuterArmorBase, AllowSuitStorageClothing, BaseSecurityContraband]
+  id: ClothingOuterVestCivilProtectionCommissar
+  name: commissar civil protection vest 
+  description: A one size fits all type of vest, made with kevlar. Encases your upper chest to provide good protection. This emphasizes the authority of its owner.
+  components:
+  - type: Sprite
+    sprite: _Citadel/Clothing/OuterClothing/Armor/civilprotectionvestcommissar.rsi
+  - type: Clothing
+    sprite: _Citadel/Clothing/OuterClothing/Armor/civilprotectionvestcommissar.rsi
+  - type: Pierceable
+    level: Metal
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.7
+        Slash: 0.7
+        Piercing: 0.7
+        Heat: 0.8
+  - type: ExplosionResistance
+    damageCoefficient: 0.8
+  - type: StaticPrice
+    price: 1500
+
+- type: entity
+  parent: [ClothingOuterArmorBase, AllowSuitStorageClothing, BaseSecurityContraband]
+  id: ClothingOuterVestCivilProtectionMed
+  name: medical civil protection vest
+  description: A one size fits all type of vest, made with kevlar. Encases your upper chest to provide good protection.
+  components:
+  - type: Sprite
+    sprite: _Citadel/Clothing/OuterClothing/Armor/civilprotectionvestmed.rsi
+  - type: Clothing
+    sprite: _Citadel/Clothing/OuterClothing/Armor/civilprotectionvestmed.rsi
+  - type: Pierceable
+    level: Metal
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.7
+        Slash: 0.7
+        Piercing: 0.7
+        Heat: 0.8
+  - type: ExplosionResistance
+    damageCoefficient: 0.8
+  - type: StaticPrice
+    price: 1500
+
+- type: entity
+  parent: [ClothingOuterArmorBase, AllowSuitStorageClothing, BaseSecurityContraband]
+  id: ClothingOuterVestCPTrenchCoat
+  name: civil protection trenchcoat
+  description: A modified standard vest with a partial trenchcoat. Provides protection for your arms and legs, but will slightly slow you down.
+  components:
+  - type: Sprite
+    sprite: _Citadel/Clothing/OuterClothing/Armor/cptrenchcoat.rsi
+  - type: Clothing
+    sprite: _Citadel/Clothing/OuterClothing/Armor/cptrenchcoat.rsi
+  - type: Pierceable
+    level: Metal
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.7
+        Slash: 0.7
+        Piercing: 0.7
+        Heat: 0.8
+  - type: ExplosionResistance
+    damageCoefficient: 0.8
+  - type: StaticPrice
+    price: 1500
+
+- type: entity
+  parent: [ClothingOuterArmorBase, AllowSuitStorageClothing, BaseSecurityContraband]
+  id: ClothingOuterVestCPTrenchCoatСommissar
+  name: civil protection commissar trenchcoat
+  description: A modified standard vest with a partial trenchcoat. Provides protection for your arms and legs, but will slightly slow you down. This emphasizes the authority of its owner.
+  components:
+  - type: Sprite
+    sprite: _Citadel/Clothing/OuterClothing/Armor/cptrenchcoatcommissar.rsi
+  - type: Clothing
+    sprite: _Citadel/Clothing/OuterClothing/Armor/cptrenchcoatcommissar.rsi
+  - type: Pierceable
+    level: Metal
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.7
+        Slash: 0.7
+        Piercing: 0.7
+        Heat: 0.8
+  - type: ExplosionResistance
+    damageCoefficient: 0.8
+  - type: StaticPrice
+    price: 1500
+
+- type: entity
+  parent: [ClothingOuterArmorBase, AllowSuitStorageClothing, BaseSecurityContraband]
+  id: ClothingOuterVestCPTrenchCoatDL
+  name: civil protection divisional lead trenchcoat
+  description: A modified standard vest with a partial trenchcoat. Provides protection for your arms and legs, but will slightly slow you down. This emphasizes the authority of its owner.
+  components:
+  - type: Sprite
+    sprite: _Citadel/Clothing/OuterClothing/Armor/cptrenchcoatdl.rsi
+  - type: Clothing
+    sprite: _Citadel/Clothing/OuterClothing/Armor/cptrenchcoatdl.rsi
+  - type: Pierceable
+    level: Metal
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.7
+        Slash: 0.7
+        Piercing: 0.7
+        Heat: 0.8
+  - type: ExplosionResistance
+    damageCoefficient: 0.8
+  - type: StaticPrice
+    price: 1500
+
+- type: entity
+  parent: [ClothingOuterArmorBase, AllowSuitStorageClothing, BaseSecurityContraband]
+  id: ClothingOuterVestArmorMolle
+  name: bulletproof molle
+  description: Thick clothing with Molle body armor that has good durability
+  components:
+  - type: Sprite
+    sprite: _Citadel/Clothing/OuterClothing/Armor/armormolle.rsi
+  - type: Clothing
+    sprite: _Citadel/Clothing/OuterClothing/Armor/armormolle.rsi
+  - type: Pierceable
+    level: Metal
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.7
+        Slash: 0.7
+        Piercing: 0.7
+        Heat: 0.8
+  - type: ExplosionResistance
+    damageCoefficient: 0.8
+  - type: StaticPrice
+    price: 1500
+
+- type: entity
+  parent: [ClothingOuterArmorBase, AllowSuitStorageClothing, BaseSecurityContraband]
+  id: ClothingOuterVestKevlarHeavy
+  name: heavy kevlar vest
+  description: A heavy mass of kevlar, likely made of several vests stitched together with more kevlar. Unwieldly, but it will definitely help protect you.
+  components:
+  - type: Sprite
+    sprite: _Citadel/Clothing/OuterClothing/Armor/kevlarheavy.rsi
+  - type: Clothing
+    sprite: _Citadel/Clothing/OuterClothing/Armor/kevlarheavy.rsi
+  - type: Pierceable
+    level: Metal
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.7
+        Slash: 0.7
+        Piercing: 0.7
+        Heat: 0.8
+  - type: ExplosionResistance
+    damageCoefficient: 0.8
+  - type: StaticPrice
+    price: 1500
+
+- type: entity
+  parent: [ClothingOuterArmorBase, AllowSuitStorageClothing, BaseSecurityContraband]
+  id: ClothingOuterVestPlateArmor
+  name: fungal plate armor
+  description: Chest armor comprised of fungal plates harvested from xenian lifeforms. Offers decent protection, but is heavy and uncomfortable.
+  components:
+  - type: Sprite
+    sprite: _Citadel/Clothing/OuterClothing/Armor/platearmor.rsi
+  - type: Clothing
+    sprite: _Citadel/Clothing/OuterClothing/Armor/platearmor.rsi
+  - type: Pierceable
+    level: Metal
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.7
+        Slash: 0.7
+        Piercing: 0.7
+        Heat: 0.8
+  - type: ExplosionResistance
+    damageCoefficient: 0.8
+  - type: StaticPrice
+    price: 1500
+
+- type: entity
+  parent: [ClothingOuterArmorBase, AllowSuitStorageClothing, BaseSecurityContraband]
+  id: ClothingOuterVestRebelArmorHeavy
+  name: resistance heavy armour
+  description: An Overwatch chestplate with improvised pieces strapped on for more protection.
+  components:
+  - type: Sprite
+    sprite: _Citadel/Clothing/OuterClothing/Armor/rebelarmorheavy.rsi
+  - type: Clothing
+    sprite: _Citadel/Clothing/OuterClothing/Armor/rebelarmorheavy.rsi
+  - type: Pierceable
+    level: Metal
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.7
+        Slash: 0.7
+        Piercing: 0.7
+        Heat: 0.8
+  - type: ExplosionResistance
+    damageCoefficient: 0.8
+  - type: StaticPrice
+    price: 1500
+
+- type: entity
+  parent: [ClothingOuterArmorBase, AllowSuitStorageClothing, BaseSecurityContraband]
+  id: ClothingOuterVestRebelArmorLight
+  name: resistance light armour
+  description: A Civil Protection chestplate with some basic armour pieces strapped on.
+  components:
+  - type: Sprite
+    sprite: _Citadel/Clothing/OuterClothing/Armor/rebelarmorlight.rsi
+  - type: Clothing
+    sprite: _Citadel/Clothing/OuterClothing/Armor/rebelarmorlight.rsi
+  - type: Pierceable
+    level: Metal
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.7
+        Slash: 0.7
+        Piercing: 0.7
+        Heat: 0.8
+  - type: ExplosionResistance
+    damageCoefficient: 0.8
+  - type: StaticPrice
+    price: 1500

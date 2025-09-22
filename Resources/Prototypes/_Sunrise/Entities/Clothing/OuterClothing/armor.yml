@@ -1,0 +1,538 @@
+- type: entity
+  parent: ClothingOuterBaseLarge
+  id: ClothingOuterArmorCentcomCarapace
+  name: naval carapace
+  description: A carapace worn by Naval Command members.
+  components:
+    - type: Sprite
+      sprite: _Sunrise/Clothing/OuterClothing/Armor/centcom_naval_carapace.rsi
+    - type: Clothing
+      sprite: _Sunrise/Clothing/OuterClothing/Armor/centcom_naval_carapace.rsi
+    - type: ClothingSpeedModifier
+      walkModifier: 1
+      sprintModifier: 1
+    - type: Pierceable
+      level: Metal
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 0.5
+          Slash: 0.5
+          Piercing: 0.6
+          Heat: 0.5
+    - type: ExplosionResistance
+      damageCoefficient: 0.65
+    - type: Tag
+      tags:
+      - NudeBottom
+      - WhitelistChameleon
+
+- type: entity
+  parent: ClothingOuterArmorBasic
+  id: ClothingOuterArmorBlueShield
+  name: blue shield's vest.
+  description: Blue and rugged.
+  components:
+  - type: Sprite
+    sprite: _Sunrise/Clothing/OuterClothing/Armor/blueshield.rsi
+  - type: Clothing
+    sprite: _Sunrise/Clothing/OuterClothing/Armor/blueshield.rsi
+  - type: Pierceable
+    level: Metal
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.5
+        Slash: 0.5
+        Piercing: 0.6
+        Heat: 0.5
+        Caustic: 0.7
+  - type: ExplosionResistance
+    damageCoefficient: 0.9
+  - type: Item
+    size: Huge
+  - type: Tag
+    tags:
+    - Vest
+    - NudeBottom
+    - WhitelistChameleon
+
+- type: entity
+  parent: [ClothingOuterBaseLarge, AllowSuitStorageClothing]
+  id: ClothingOuterArmorSWAT
+  name: SWAT armor
+  description: NT's unsuccessful attempt to create universal and expensive protection. It provides excellent protection against many types of damage, but it also slows down extremely much.
+  components:
+  - type: Sprite
+    sprite: Clothing/OuterClothing/Armor/heavy.rsi
+  - type: Clothing
+    sprite: Clothing/OuterClothing/Armor/heavy.rsi
+  - type: StaminaResistance
+    damageCoefficient: 0.75
+  - type: Pierceable
+    level: Rock
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.55
+        Slash: 0.55
+        Piercing: 0.3
+        Heat: 0.6
+        Radiation: 0.6
+        Caustic: 0.6
+  - type: ExplosionResistance
+    damageCoefficient: 0.65
+  - type: PressureProtection
+    highPressureMultiplier: 0.5
+    lowPressureMultiplier: 0.25
+  - type: TemperatureProtection
+    heatingCoefficient: 0.5
+    coolingCoefficient: 0.5
+  - type: ClothingSpeedModifier
+    walkModifier: 0.8
+    sprintModifier: 0.8
+  - type: GroupExamine
+  - type: ProtectedFromStepTriggers
+    slots: WITHOUT_POCKET
+  - type: Tag
+    tags:
+    - FullBodyOuter
+    - WhitelistChameleon
+
+- type: entity
+  parent: [ClothingOuterBaseLarge, AllowSuitStorageClothing, BaseCentcommContraband ]
+  id: ClothingOuterArmorAmberCom
+  name: ERT Amber Leader armor
+  description: NT's universal flexible and well-armored suit with a powerful shoulder mounted flashlight ,it does not protect its wearer from space.
+  components:
+  - type: Sprite
+    sprite: _Sunrise/Clothing/OuterClothing/Armor/amber_armor_com.rsi
+    layers:
+    - state: icon
+    - state: light-overlay
+      visible: false
+      shader: unshaded
+  - type: Clothing
+    sprite: _Sunrise/Clothing/OuterClothing/Armor/amber_armor_com.rsi
+  - type: Pierceable
+    level: Metal
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.45
+        Slash: 0.45
+        Piercing: 0.45
+        Heat: 0.50
+        Caustic: 0.7
+  - type: ExplosionResistance
+    damageCoefficient: 0.6
+  - type: PressureProtection
+    highPressureMultiplier: 0.6
+    lowPressureMultiplier: 1000
+  - type: TemperatureProtection
+    heatingCoefficient: 0.02
+    coolingCoefficient: 0.5
+  - type: ClothingSpeedModifier
+    walkModifier: 0.90
+    sprintModifier: 0.90
+  #Shoulder mounted flashlight
+  - type: ToggleableLightVisuals
+    spriteLayer: light
+    clothingVisuals:
+      outerClothing:
+      - state: equipped-OUTERCLOTHING-light
+        shader: unshaded
+  - type: Appearance
+  - type: HandheldLight
+    addPrefix: false
+    blinkingBehaviourId: blinking
+    radiatingBehaviourId: radiating
+  - type: PointLight
+    enabled: false
+    color: "#00FFFFFF"
+    radius: 5
+    energy: 2
+    mask: /Textures/Effects/LightMasks/cone.png
+    autoRot: true
+    netsync: false
+  - type: LightBehaviour
+    behaviours:
+      - !type:FadeBehaviour
+        id: radiating
+        interpolate: Linear
+        maxDuration: 2.0
+        startValue: 3.0
+        endValue: 2.0
+        isLooped: true
+        reverseWhenFinished: true
+      - !type:PulseBehaviour
+        id: blinking
+        interpolate: Nearest
+        maxDuration: 1.0
+        isLooped: true
+  - type: Battery
+    maxCharge: 600
+    startingCharge: 600
+  - type: BatterySelfRecharger
+    autoRecharge: true
+    autoRechargeRate: 2
+
+- type: entity
+  parent: [ ClothingOuterArmorAmberCom, AllowSuitStorageClothing, BaseCentcommContraband ]
+  id: ClothingOuterArmorAmberSec
+  name: ERT Amber armor
+  description: NT's universal flexible and well-armored suit with a powerful shoulder mounted flashlight ,it does not protect its wearer from space.
+  components:
+  - type: Sprite
+    sprite: _Sunrise/Clothing/OuterClothing/Armor/amber_armor_sec.rsi
+    layers:
+    - state: icon
+    - state: light-overlay
+      visible: false
+      shader: unshaded
+  - type: Clothing
+    sprite: _Sunrise/Clothing/OuterClothing/Armor/amber_armor_sec.rsi
+  #Shoulder mounted flashlight
+  - type: ToggleableLightVisuals
+    spriteLayer: light
+    clothingVisuals:
+      outerClothing:
+      - state: equipped-OUTERCLOTHING-light
+        shader: unshaded
+  - type: Appearance
+  - type: HandheldLight
+    addPrefix: false
+    blinkingBehaviourId: blinking
+    radiatingBehaviourId: radiating
+  - type: PointLight
+    enabled: false
+    color: "#00FFFFFF"
+    radius: 5
+    energy: 2
+    mask: /Textures/Effects/LightMasks/cone.png
+    autoRot: true
+    netsync: false
+  - type: LightBehaviour
+    behaviours:
+      - !type:FadeBehaviour
+        id: radiating
+        interpolate: Linear
+        maxDuration: 2.0
+        startValue: 3.0
+        endValue: 2.0
+        isLooped: true
+        reverseWhenFinished: true
+      - !type:PulseBehaviour
+        id: blinking
+        interpolate: Nearest
+        maxDuration: 1.0
+        isLooped: true
+  - type: Battery
+    maxCharge: 600
+    startingCharge: 600
+  - type: BatterySelfRecharger
+    autoRecharge: true
+    autoRechargeRate: 2
+
+- type: entity
+  parent: [ ClothingOuterArmorAmberCom, AllowSuitStorageClothing, BaseCentcommContraband ]
+  id: ClothingOuterArmorAmberChap
+  name: ERT Amber Chaplain armor
+  description: NT's universal flexible and well-armored suit with a powerful shoulder mounted flashlight ,it does not protect its wearer from space.
+  components:
+  - type: Sprite
+    sprite: _Sunrise/Clothing/OuterClothing/Armor/amber_armor_chap.rsi
+    layers:
+    - state: icon
+    - state: light-overlay
+      visible: false
+      shader: unshaded
+  - type: Clothing
+    sprite: _Sunrise/Clothing/OuterClothing/Armor/amber_armor_chap.rsi
+  #Shoulder mounted flashlight
+  - type: ToggleableLightVisuals
+    spriteLayer: light
+    clothingVisuals:
+      outerClothing:
+      - state: equipped-OUTERCLOTHING-light
+        shader: unshaded
+  - type: Appearance
+  - type: HandheldLight
+    addPrefix: false
+    blinkingBehaviourId: blinking
+    radiatingBehaviourId: radiating
+  - type: PointLight
+    enabled: false
+    color: "#FFC458FF"
+    radius: 5
+    energy: 2
+    mask: /Textures/Effects/LightMasks/cone.png
+    autoRot: true
+    netsync: false
+  - type: LightBehaviour
+    behaviours:
+      - !type:FadeBehaviour
+        id: radiating
+        interpolate: Linear
+        maxDuration: 2.0
+        startValue: 3.0
+        endValue: 2.0
+        isLooped: true
+        reverseWhenFinished: true
+      - !type:PulseBehaviour
+        id: blinking
+        interpolate: Nearest
+        maxDuration: 1.0
+        isLooped: true
+  - type: Battery
+    maxCharge: 600
+    startingCharge: 600
+  - type: BatterySelfRecharger
+    autoRecharge: true
+    autoRechargeRate: 2
+
+- type: entity
+  parent: [ ClothingOuterArmorAmberCom, AllowSuitStorageClothing, BaseCentcommContraband ]
+  id: ClothingOuterArmorAmberEng
+  name: ERT Amber Chaplain armor
+  description: NT's universal flexible and well-armored suit with a powerful shoulder mounted flashlight ,it does not protect its wearer from space.
+  components:
+  - type: Sprite
+    sprite: _Sunrise/Clothing/OuterClothing/Armor/amber_armor_eng.rsi
+    layers:
+    - state: icon
+    - state: light-overlay
+      visible: false
+      shader: unshaded
+  - type: Clothing
+    sprite: _Sunrise/Clothing/OuterClothing/Armor/amber_armor_eng.rsi
+  #Shoulder mounted flashlight
+  - type: ToggleableLightVisuals
+    spriteLayer: light
+    clothingVisuals:
+      outerClothing:
+      - state: equipped-OUTERCLOTHING-light
+        shader: unshaded
+  - type: Appearance
+  - type: HandheldLight
+    addPrefix: false
+    blinkingBehaviourId: blinking
+    radiatingBehaviourId: radiating
+  - type: PointLight
+    enabled: false
+    color: "#00FFFFFF"
+    radius: 5
+    energy: 2
+    mask: /Textures/Effects/LightMasks/cone.png
+    autoRot: true
+    netsync: false
+  - type: LightBehaviour
+    behaviours:
+      - !type:FadeBehaviour
+        id: radiating
+        interpolate: Linear
+        maxDuration: 2.0
+        startValue: 3.0
+        endValue: 2.0
+        isLooped: true
+        reverseWhenFinished: true
+      - !type:PulseBehaviour
+        id: blinking
+        interpolate: Nearest
+        maxDuration: 1.0
+        isLooped: true
+  - type: Battery
+    maxCharge: 600
+    startingCharge: 600
+  - type: BatterySelfRecharger
+    autoRecharge: true
+    autoRechargeRate: 2
+
+- type: entity
+  parent: [ ClothingOuterArmorAmberCom, AllowSuitStorageClothing, BaseCentcommContraband ]
+  id: ClothingOuterArmorAmberMed
+  name: ERT Amber Medic armor
+  description: NT's universal flexible and well-armored suit with a powerful shoulder mounted flashlight ,it does not protect its wearer from space.
+  components:
+  - type: Sprite
+    sprite: _Sunrise/Clothing/OuterClothing/Armor/amber_armor_med.rsi
+    layers:
+    - state: icon
+    - state: light-overlay
+      visible: false
+      shader: unshaded
+  - type: Clothing
+    sprite: _Sunrise/Clothing/OuterClothing/Armor/amber_armor_med.rsi
+  #Shoulder mounted flashlight
+  - type: ToggleableLightVisuals
+    spriteLayer: light
+    clothingVisuals:
+      outerClothing:
+      - state: equipped-OUTERCLOTHING-light
+        shader: unshaded
+  - type: Appearance
+  - type: HandheldLight
+    addPrefix: false
+    blinkingBehaviourId: blinking
+    radiatingBehaviourId: radiating
+  - type: PointLight
+    enabled: false
+    color: "#ADFFECFF"
+    radius: 5
+    energy: 2
+    mask: /Textures/Effects/LightMasks/cone.png
+    autoRot: true
+    netsync: false
+  - type: LightBehaviour
+    behaviours:
+      - !type:FadeBehaviour
+        id: radiating
+        interpolate: Linear
+        maxDuration: 2.0
+        startValue: 3.0
+        endValue: 2.0
+        isLooped: true
+        reverseWhenFinished: true
+      - !type:PulseBehaviour
+        id: blinking
+        interpolate: Nearest
+        maxDuration: 1.0
+        isLooped: true
+  - type: Battery
+    maxCharge: 600
+    startingCharge: 600
+  - type: BatterySelfRecharger
+    autoRecharge: true
+    autoRechargeRate: 2
+
+- type: entity
+  parent: [ ClothingOuterArmorAmberCom, AllowSuitStorageClothing, BaseCentcommContraband ]
+  id: ClothingOuterArmorAmberJan
+  name: ERT Amber Janitor armor
+  description: NT's universal flexible and well-armored suit with a powerful shoulder mounted flashlight ,it does not protect its wearer from space.
+  components:
+  - type: Sprite
+    sprite: _Sunrise/Clothing/OuterClothing/Armor/amber_armor_jan.rsi
+    layers:
+    - state: icon
+    - state: light-overlay
+      visible: false
+      shader: unshaded
+  - type: Clothing
+    sprite: _Sunrise/Clothing/OuterClothing/Armor/amber_armor_jan.rsi
+  #Shoulder mounted flashlight
+  - type: ToggleableLightVisuals
+    spriteLayer: light
+    clothingVisuals:
+      outerClothing:
+      - state: equipped-OUTERCLOTHING-light
+        shader: unshaded
+  - type: Appearance
+  - type: HandheldLight
+    addPrefix: false
+    blinkingBehaviourId: blinking
+    radiatingBehaviourId: radiating
+  - type: PointLight
+    enabled: false
+    color: "#CBADFFFF"
+    radius: 5
+    energy: 2
+    mask: /Textures/Effects/LightMasks/cone.png
+    autoRot: true
+    netsync: false
+  - type: LightBehaviour
+    behaviours:
+      - !type:FadeBehaviour
+        id: radiating
+        interpolate: Linear
+        maxDuration: 2.0
+        startValue: 3.0
+        endValue: 2.0
+        isLooped: true
+        reverseWhenFinished: true
+      - !type:PulseBehaviour
+        id: blinking
+        interpolate: Nearest
+        maxDuration: 1.0
+        isLooped: true
+  - type: Battery
+    maxCharge: 600
+    startingCharge: 600
+  - type: BatterySelfRecharger
+    autoRecharge: true
+    autoRechargeRate: 2
+
+- type: entity
+  parent: ClothingOuterArmorBasic
+  id: ClothingOuterArmorAbductor
+  name: agent vest
+  components:
+  - type: Sprite
+    sprite: _Sunrise/Abductor/Clothing/OuterClothing/Armor/abductor.rsi
+  - type: Clothing
+    sprite: _Sunrise/Abductor/Clothing/OuterClothing/Armor/abductor.rsi
+    equippedPrefix: stealth
+  - type: Item
+    size: Normal
+  - type: AbductorVest
+  - type: ItemSwitch
+    state: Stealth
+    states:
+      Stealth: !type:ItemSwitchState
+        verb: abductor-armor-stealth
+        hiden: true
+        sprite:
+          sprite: _Sunrise/Abductor/Clothing/OuterClothing/Armor/abductor.rsi
+          state: icon
+        components:
+        - type: Pierceable
+          level: Metal
+        - type: Armor
+          modifiers:
+            coefficients:
+              Blunt: 0.85
+              Slash: 0.85
+              Heat: 0.85
+              Piercing: 0.85
+              Radiation: 0.85
+              Caustic: 0.25
+        - type: ExplosionResistance
+          damageCoefficient: 0.85
+        - type: ItemToggle
+          predictable: false
+          onUse: false
+          soundActivate:
+            path: /Audio/_Sunrise/Items/Goggles/activate.ogg # Брал с ПНВ компоненты, звук понравился, решил оставить :)
+          soundDeactivate:
+            path: /Audio/_Sunrise/Items/Goggles/deactivate.ogg
+          soundFailToActivate:
+            path: /Audio/Machines/button.ogg
+        - type: ToggleClothing
+          action: AbductorVestToggleStealth
+          mustEquip: true
+          disableOnUnequip: true
+        - type: ComponentToggler
+          parent: true
+          components:
+          - type: Stealth
+          - type: StealthOnMove
+      Combat: !type:ItemSwitchState
+        verb: abductor-armor-combat
+        hiden: true
+        sprite:
+          sprite: _Sunrise/Abductor/Clothing/OuterClothing/Armor/abductor.rsi
+          state: combat-icon
+        components:
+        - type: Pierceable
+          level: Metal
+        - type: Armor
+          modifiers:
+            coefficients:
+              Blunt: 0.5
+              Slash: 0.5
+              Heat: 0.5
+              Piercing: 0.5
+              Radiation: 0.5
+              Caustic: 0.1
+        - type: ExplosionResistance
+          damageCoefficient: 0.5

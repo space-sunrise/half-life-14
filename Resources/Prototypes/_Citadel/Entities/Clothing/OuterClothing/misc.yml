@@ -1,0 +1,63 @@
+- type: entity
+  parent: ClothingOuterStorageBase
+  id: ClothingOuterMiscMedCoat
+  name: medcoat
+  description: robe. It seems there are some signs on it
+  components:
+  - type: Sprite
+    sprite: _Citadel/Clothing/OuterClothing/Misc/medcoat.rsi
+  - type: Clothing
+    sprite: _Citadel/Clothing/OuterClothing/Misc/medcoat.rsi
+
+- type: entity
+  parent: ClothingOuterStorageBase
+  id: ClothingOuterMiscLabCoat
+  name: labcoat
+  description: robe. It seems there are some signs on it
+  components:
+  - type: Sprite
+    sprite: _Citadel/Clothing/OuterClothing/Misc/labcoat.rsi
+  - type: Clothing
+    sprite: _Citadel/Clothing/OuterClothing/Misc/labcoat.rsi
+
+- type: entity
+  parent: ClothingOuterStorageBase
+  id: ClothingOuterMiscGreenJacket
+  name: green union jacket
+  description: A heavily faded jacket. It was supposedly rather green, but now you can barely tell it from a grey jacket.
+  components:
+  - type: Sprite
+    sprite: _Citadel/Clothing/OuterClothing/Misc/greenjacket.rsi
+  - type: Clothing
+    sprite: _Citadel/Clothing/OuterClothing/Misc/greenjacket.rsi
+
+- type: entity
+  parent: ClothingOuterStorageBase
+  id: ClothingOuterMiscBlueJacket
+  name: blue union jacket
+  description: A blue jacket for citizens to wear. This one is padded with extra protective fabric.
+  components:
+  - type: Sprite
+    sprite: _Citadel/Clothing/OuterClothing/Misc/bluejacket.rsi
+  - type: Clothing
+    sprite: _Citadel/Clothing/OuterClothing/Misc/bluejacket.rsi
+
+- type: entity
+  parent: ClothingOuterStorageBase
+  id: ClothingOuterMiscBrownover
+  name: brown overcoat
+  description: A well padded overcoat which offers a small amount of protection.
+  components:
+  - type: Sprite
+    sprite: _Citadel/Clothing/OuterClothing/Misc/brownover.rsi
+  - type: Clothing
+    sprite: _Citadel/Clothing/OuterClothing/Misc/brownover.rsi
+  - type: Pierceable
+    level: Metal
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.9
+        Slash: 0.9
+        Piercing: 0.9
+        Heat: 0.9

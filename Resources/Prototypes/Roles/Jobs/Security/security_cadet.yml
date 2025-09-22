@@ -1,0 +1,52 @@
+- type: job
+  id: SecurityCadet
+  name: job-name-cadet
+  description: job-description-cadet
+  playTimeTracker: JobSecurityCadet
+  requirements:
+    - !type:OverallPlaytimeRequirement
+      time: 18000 #5 hrs # Sunrise-RoleTime
+  startingGear: SecurityCadetGear
+  icon: "JobIconSecurityCadet"
+  supervisors: job-supervisors-security
+  canBeAntag: false
+  displayWeight: 0 # Sunrise-Edit
+  access:
+  - Security
+  - Brig
+#  - Maintenance #Sunrise-Edit
+  - Service
+  - External
+  - Cryogenics
+  special:
+  - !type:AddImplantSpecial
+    implants: [ MindShieldImplant ]
+  speciesBlacklist:
+  - Vox
+
+- type: startingGear
+  id: SecurityCadetGear
+  equipment:
+    shoes: ClothingShoesBootsJack
+    outerClothing: ClothingOuterArmorBasic
+    id: SecurityCadetPDA
+    ears: ClothingHeadsetSecurity
+    eyes: ClothingEyesHudSecurity #Sunrise-edit
+    belt: ClothingBeltSecurityFilled
+    gloves: ClothingHandsGlovesColorGray
+    pocket1: HyperLinkBookCorporateLaw # Sunrise-edit
+  storage:
+    back:
+    - Flash
+
+- type: chameleonOutfit
+  id: SecurityCadetChameleonOutfit
+  job: SecurityCadet
+  hasMindShield: true
+  equipment:
+    head: ClothingHeadHelmetBasic
+    eyes: ClothingEyesHudSecurity
+    mask: ClothingMaskGasSecurity
+    neck: ClothingNeckScarfStripedRed
+    belt: ClothingBeltSecurity
+    gloves: ClothingHandsGlovesColorBlack

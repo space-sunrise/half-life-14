@@ -1,0 +1,34 @@
+## Static
+
+- type: latheRecipePack
+  id: BioGenIngredientsStatic
+  recipes:
+  - BioGenMilk
+  - BioGenMilkSoy
+  - BioGenEthanol
+  - BioGenCream
+  - BioGenBlackpepper
+  - BioGenEnzyme
+  - BioGenFlour
+  - BioGenSugar
+  - BioGenMonkeyCube
+  - BioGenKoboldCube
+  - BioGenCandle
+  - BioGenPlantBGone
+  - BioGenWeedKiller
+  - BioGenPestKiller
+  - BioGenLeft4Zed
+  - BioGenEZNutrient
+  - BioGenRobustHarvest
+  - BioGenUnstableMutagen #Sunrise-add
+  - BioGenNitroKill #Sunrise-add
+  - BioGenInc #Sunrise-add
+  - BioGenDiethylamine #Sunrise-add
+
+- type: latheRecipePack
+  id: BioGenMaterialsStatic
+  recipes:
+  - BioGenMaterialCloth1
+  - BioGenMaterialCardboard1
+  - BioGenPaper
+  - BioGenPaperRolling1

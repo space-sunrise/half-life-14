@@ -1,0 +1,213 @@
+- type: entity
+  parent: [ ClothingMaskGas, BaseSecurityContraband ]
+  id: ClothingMaskGasCivilProtection
+  name: civil protection mask
+  description: Heavy duty white mask for civil protection units. Provides some protection to the face.
+  components:
+  - type: Sprite
+    sprite: _Citadel/Clothing/Mask/civilprotectionmask.rsi
+  - type: Clothing
+    sprite: _Citadel/Clothing/Mask/civilprotectionmask.rsi
+  - type: Tag
+    tags:
+    - WhitelistChameleon
+    - FaceCovered
+  - type: HideLayerClothing
+    slots:
+    - Hair
+    - Snout
+    - HeadTop
+    - HeadSide
+    hideOnToggle: true
+  - type: Pierceable
+    level: Metal
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.9
+        Slash: 0.9
+        Piercing: 0.9
+        Heat: 0.9
+  - type: DiseaseImmuneClothing
+    prob: 0.80
+  - type: FlashImmunity
+
+- type: entity
+  parent: [ ClothingMaskGas, BaseSecurityContraband ]
+  id: ClothingMaskGasCivilProtectionCommissar
+  name: civil protection commissar mask
+  description: Heavy duty white mask for civil protection units. Provides some protection to the face.
+  components:
+  - type: Sprite
+    sprite: _Citadel/Clothing/Mask/civilprotectionmaskcommissar.rsi
+  - type: Clothing
+    sprite: _Citadel/Clothing/Mask/civilprotectionmaskcommissar.rsi
+  - type: Tag
+    tags:
+    - WhitelistChameleon
+    - FaceCovered
+  - type: HideLayerClothing
+    slots:
+    - Hair
+    - Snout
+    - HeadTop
+    - HeadSide
+    hideOnToggle: true
+  - type: Pierceable
+    level: Metal
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.9
+        Slash: 0.9
+        Piercing: 0.9
+        Heat: 0.9
+  - type: DiseaseImmuneClothing
+    prob: 0.90
+  - type: FlashImmunity
+
+- type: entity
+  parent: [ ClothingMaskGas, BaseSecurityContraband ]
+  id: ClothingMaskGasCivilProtectionDL
+  name: civil protection division lead mask
+  description: Heavy duty white mask for civil protection units. Provides some protection to the face.
+  components:
+  - type: Sprite
+    sprite: _Citadel/Clothing/Mask/civilprotectionmaskdl.rsi
+  - type: Clothing
+    sprite: _Citadel/Clothing/Mask/civilprotectionmaskdl.rsi
+  - type: Tag
+    tags:
+    - WhitelistChameleon
+    - FaceCovered
+  - type: HideLayerClothing
+    slots:
+    - Hair
+    - Snout
+    - HeadTop
+    - HeadSide
+    hideOnToggle: true
+  - type: Pierceable
+    level: Metal
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.85
+        Slash: 0.85
+        Piercing: 0.85
+        Heat: 0.85
+  - type: DiseaseImmuneClothing
+    prob: 0.90
+  - type: FlashImmunity
+
+- type: entity
+  parent: [ ClothingMaskGas, BaseSecurityContraband ]
+  id: ClothingMaskGasCivilProtectionMed
+  name: civil protection medical mask
+  description: Heavy duty white mask for civil protection units. Provides some protection to the face.
+  components:
+  - type: Sprite
+    sprite: _Citadel/Clothing/Mask/civilprotectionmaskmed.rsi
+  - type: Clothing
+    sprite: _Citadel/Clothing/Mask/civilprotectionmaskmed.rsi
+  - type: Tag
+    tags:
+    - WhitelistChameleon
+    - FaceCovered
+  - type: HideLayerClothing
+    slots:
+    - Hair
+    - Snout
+    - HeadTop
+    - HeadSide
+    hideOnToggle: true
+  - type: Pierceable
+    level: Metal
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.9
+        Slash: 0.9
+        Piercing: 0.9
+        Heat: 0.9
+  - type: DiseaseImmuneClothing
+    prob: 0.80
+  - type: FlashImmunity
+
+- type: entity
+  parent: [ ClothingMaskGas, BaseSecurityContraband ]
+  id: ClothingMaskGasModernMask
+  name: moderngasmask
+  description: A gas mask from the days of past wars that does a good job of filtering toxins from the air you breathe.
+  components:
+  - type: Sprite
+    sprite: _Citadel/Clothing/Mask/moderngasmask.rsi
+  - type: Clothing
+    sprite: _Citadel/Clothing/Mask/moderngasmask.rsi
+  - type: Tag
+    tags:
+    - WhitelistChameleon
+    - FaceCovered
+  - type: HideLayerClothing
+    slots:
+    - Hair
+    - Snout
+    - HeadTop
+    - HeadSide
+    hideOnToggle: true
+  - type: DiseaseImmuneClothing
+    prob: 0.70
+  - type: Pierceable
+    level: Metal
+
+- type: entity
+  parent: [ ClothingMaskGas, BaseSecurityContraband ]
+  id: ClothingMaskGasRussiaMask
+  name: russiamask
+  description: A gas mask from the days of past wars that does a good job of filtering toxins from the air you breathe.
+  components:
+  - type: Sprite
+    sprite: _Citadel/Clothing/Mask/russiamask.rsi
+  - type: Clothing
+    sprite: _Citadel/Clothing/Mask/russiamask.rsi
+  - type: Tag
+    tags:
+    - WhitelistChameleon
+    - FaceCovered
+  - type: HideLayerClothing
+    slots:
+    - Hair
+    - Snout
+    - HeadTop
+    - HeadSide
+    hideOnToggle: true
+  - type: DiseaseImmuneClothing
+    prob: 0.60
+  - type: Pierceable
+    level: Metal
+
+- type: entity
+  parent: [ ClothingMaskGas, BaseSecurityContraband ]
+  id: ClothingMaskGasSwatMask
+  name: swatmask
+  description: A gas mask from the days of past wars that does a good job of filtering toxins from the air you breathe.
+  components:
+  - type: Sprite
+    sprite: _Citadel/Clothing/Mask/swatmask.rsi
+  - type: Clothing
+    sprite: _Citadel/Clothing/Mask/swatmask.rsi
+  - type: Tag
+    tags:
+    - WhitelistChameleon
+    - FaceCovered
+  - type: HideLayerClothing
+    slots:
+    - Hair
+    - Snout
+    - HeadTop
+    - HeadSide
+    hideOnToggle: true
+  - type: DiseaseImmuneClothing
+    prob: 0.70
+  - type: Pierceable
+    level: Metal

@@ -1,0 +1,176 @@
+
+- type: entity
+  parent: [ClothingUniformBase, BaseCommandContraband]
+  id: ClothingUniformJumpsuitBlackSuitOld
+  name: old suit
+  description: A pretty good, old yet clean black suit.
+  components:
+  - type: Sprite
+    sprite: _Citadel/Clothing/Uniforms/Jumpsuit/blacksuit.rsi
+  - type: Clothing
+    sprite: _Citadel/Clothing/Uniforms/Jumpsuit/blacksuit.rsi
+
+- type: entity
+  parent: [ClothingUniformBase, BaseCommandContraband]
+  id: ClothingUniformJumpsuitBrownSuitOld
+  name: old suit
+  description: A well padded overcoat which offers a small amount of protection.
+  components:
+  - type: Sprite
+    sprite: _Citadel/Clothing/Uniforms/Jumpsuit/brownsuit.rsi
+  - type: Clothing
+    sprite: _Citadel/Clothing/Uniforms/Jumpsuit/brownsuit.rsi
+
+- type: entity
+  parent: [ClothingUniformBase, BaseCommandContraband]
+  id: ClothingUniformJumpsuitCitizenBlue
+  name: citizen jumpsuit
+  description: Full-body blue suit for the common citizen, worn down and dirtied by time and use. Uses sensors to allow the combine to track you.
+  components:
+  - type: Sprite
+    sprite: _Citadel/Clothing/Uniforms/Jumpsuit/citizenblue.rsi
+  - type: Clothing
+    sprite: _Citadel/Clothing/Uniforms/Jumpsuit/citizenblue.rsi
+
+- type: entity
+  parent: [ClothingUniformBase, BaseCommandContraband]
+  id: ClothingUniformJumpsuitCitizenBlueCut
+  name: citizen jumpsuit short
+  description: Full-body blue suit for the common citizen, worn down and dirtied by time and use. Uses sensors to allow the combine to track you.
+  components:
+  - type: Sprite
+    sprite: _Citadel/Clothing/Uniforms/Jumpsuit/citizenbluecut.rsi
+  - type: Clothing
+    sprite: _Citadel/Clothing/Uniforms/Jumpsuit/citizenbluecut.rsi
+
+- type: entity
+  parent: [ClothingUniformBase, BaseCommandContraband]
+  id: ClothingUniformJumpsuitCivilProtection
+  name: civil protection jumpsuit
+  description: Full-body suit which includes light kevlar weaving to provide extra protection.
+  components:
+  - type: Sprite
+    sprite: _Citadel/Clothing/Uniforms/Jumpsuit/civilprotectionsuit.rsi
+  - type: Clothing
+    sprite: _Citadel/Clothing/Uniforms/Jumpsuit/civilprotectionsuit.rsi
+
+- type: entity
+  parent: [ClothingUniformBase, BaseCommandContraband]
+  id: ClothingUniformJumpsuitCivilProtectionDL
+  name: divisional lead jumpsuit
+  description: A version of the standard civil protection suit with slightly more protection, and red highlights.
+  components:
+  - type: Sprite
+    sprite: _Citadel/Clothing/Uniforms/Jumpsuit/civilprotectionsuitdl.rsi
+  - type: Clothing
+    sprite: _Citadel/Clothing/Uniforms/Jumpsuit/civilprotectionsuitdl.rsi
+
+- type: entity
+  parent: [ClothingUniformBase, BaseCommandContraband]
+  id: ClothingUniformJumpsuitClassySuit
+  name: old suit
+  description: A pretty good, old yet clean black suit. Often given to high ranking citizens.
+  components:
+  - type: Sprite
+    sprite: _Citadel/Clothing/Uniforms/Jumpsuit/classysuit.rsi
+  - type: Clothing
+    sprite: _Citadel/Clothing/Uniforms/Jumpsuit/classysuit.rsi
+
+- type: entity
+  parent: [ClothingUniformBase, BaseCommandContraband]
+  id: ClothingUniformJumpsuitFormal
+  name: administrator suit
+  description: A well made black suit, specially tailored for the district administrator.
+  components:
+  - type: Sprite
+    sprite: _Citadel/Clothing/Uniforms/Jumpsuit/formal.rsi
+  - type: Clothing
+    sprite: _Citadel/Clothing/Uniforms/Jumpsuit/formal.rsi
+
+- type: entity
+  parent: [ClothingUniformBase, BaseCommandContraband]
+  id: ClothingUniformJumpsuitGreenRefugee
+  name: refugee clothes
+  description: Dirty blue jeans with an accompanying green shirt, free of any suit sensors the combine may use to track you.
+  components:
+  - type: Sprite
+    sprite: _Citadel/Clothing/Uniforms/Jumpsuit/green_refugee.rsi
+  - type: Clothing
+    sprite: _Citadel/Clothing/Uniforms/Jumpsuit/green_refugee.rsi
+
+- type: entity
+  parent: [ClothingUniformBase, BaseCommandContraband]
+  id: ClothingUniformJumpsuitRefugee
+  name: refugee clothes
+  description: Dirty blue jeans with an accompanying light colored shirt, free of any suit sensors the combine may use to track you.
+  components:
+  - type: Sprite
+    sprite: _Citadel/Clothing/Uniforms/Jumpsuit/refugee.rsi
+  - type: Clothing
+    sprite: _Citadel/Clothing/Uniforms/Jumpsuit/refugee.rsi
+
+- type: entity
+  parent: [ClothingUniformBase, BaseCommandContraband]
+  id: ClothingUniformJumpsuitGrunt
+  name: grunt jumpsuit
+  description: Full-body suit white armored suit. Designed to protect against slashes, blunt force trauma, and most of all biohazards. However, does not protect espescially well against bullets.
+  components:
+  - type: Sprite
+    sprite: _Citadel/Clothing/Uniforms/Jumpsuit/grunt.rsi
+  - type: Clothing
+    sprite: _Citadel/Clothing/Uniforms/Jumpsuit/grunt.rsi
+
+- type: entity
+  parent: [ClothingUniformBase, BaseCommandContraband]
+  id: ClothingUniformJumpsuitOverwatch
+  name: overwatch jumpsuit
+  description: Full-body suit which includes kevlar weaving to provide extra protection.
+  components:
+  - type: Sprite
+    sprite: _Citadel/Clothing/Uniforms/Jumpsuit/overwatch.rsi
+  - type: Clothing
+    sprite: _Citadel/Clothing/Uniforms/Jumpsuit/overwatch.rsi
+
+- type: entity
+  parent: [ClothingUniformBase, BaseCommandContraband]
+  id: ClothingUniformJumpsuitOverwatchRed
+  name: overwatch jumpsuit
+  description: Red full-body suit which includes kevlar weaving to provide extra protection.
+  components:
+  - type: Sprite
+    sprite: _Citadel/Clothing/Uniforms/Jumpsuit/overwatch_red.rsi
+  - type: Clothing
+    sprite: _Citadel/Clothing/Uniforms/Jumpsuit/overwatch_red.rsi
+
+- type: entity
+  parent: [ClothingUniformBase, BaseCommandContraband]
+  id: ClothingUniformJumpsuitOverwatchWhite
+  name: overwatch jumpsuit
+  description: Full-body reinforced suit which includes kevlar weaving to provide extra protection.
+  components:
+  - type: Sprite
+    sprite: _Citadel/Clothing/Uniforms/Jumpsuit/overwatch_white.rsi
+  - type: Clothing
+    sprite: _Citadel/Clothing/Uniforms/Jumpsuit/overwatch_white.rsi
+
+- type: entity
+  parent: [ClothingUniformBase, BaseCommandContraband]
+  id: ClothingUniformJumpsuitGmanSuit
+  name: blue suit
+  description: Time already?
+  components:
+  - type: Sprite
+    sprite: _Citadel/Clothing/Uniforms/Jumpsuit/gsuit.rsi
+  - type: Clothing
+    sprite: _Citadel/Clothing/Uniforms/Jumpsuit/gsuit.rsi
+
+- type: entity
+  parent: [ClothingUniformBase, BaseCommandContraband]
+  id: ClothingUniformJumpsuitHeeledSuit
+  name: administrator suit
+  description: A well made, though aged, burgundy suit. Specially tailored for the district administrator.
+  components:
+  - type: Sprite
+    sprite: _Citadel/Clothing/Uniforms/Jumpsuit/heeledsuit.rsi
+  - type: Clothing
+    sprite: _Citadel/Clothing/Uniforms/Jumpsuit/heeledsuit.rsi

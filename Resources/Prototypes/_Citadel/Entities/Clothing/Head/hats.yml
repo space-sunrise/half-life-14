@@ -1,0 +1,307 @@
+- type: entity
+  parent: ClothingHeadBase
+  id: ClothingHeadHelmetHEV
+  name: HEV helmet
+  description: An atmos fire helmet, able to keep the user cool in any situation.
+  components:
+  - type: Sprite
+    sprite: _Citadel/Clothing/Head/Hardsuithelmet/hev.rsi
+  - type: Clothing
+    sprite: _Citadel/Clothing/Head/Hardsuithelmet/hev.rsi
+  - type: IngestionBlocker
+  - type: TemperatureProtection
+    heatingCoefficient: 0.01
+    coolingCoefficient: 0.2
+  - type: FireProtection
+    reduction: 0.2
+  - type: PressureProtection
+    highPressureMultiplier: 0.25
+    lowPressureMultiplier: 1000
+  - type: IdentityBlocker
+  - type: Tag
+    tags:
+    - WhitelistChameleon
+    - CorgiWearable
+    - FullCovered
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.9
+        Slash: 0.9
+        Piercing: 0.9
+        Heat: 0.9
+  - type: HideLayerClothing
+    layers:
+      Hair: HEAD
+      Snout: HEAD
+  - type: BreathMask
+
+- type: entity
+  parent: ClothingHeadBase
+  id: ClothingHeadHelmetGrunt
+  name: grunt helmet
+  description: An atmos fire helmet, able to keep the user cool in any situation.
+  components:
+  - type: Sprite
+    sprite: _Citadel/Clothing/Head/Hardsuithelmet/grunt.rsi
+  - type: Clothing
+    sprite: _Citadel/Clothing/Head/Hardsuithelmet/grunt.rsi
+    quickEquip: true
+  - type: IngestionBlocker
+  - type: TemperatureProtection
+    heatingCoefficient: 0.01
+    coolingCoefficient: 0.2
+  - type: FireProtection
+    reduction: 0.2
+  - type: PressureProtection
+    highPressureMultiplier: 0.25
+    lowPressureMultiplier: 1000
+  - type: IdentityBlocker
+  - type: Tag
+    tags:
+    - WhitelistChameleon
+    - CorgiWearable
+    - FullCovered
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.9
+        Slash: 0.9
+        Piercing: 0.9
+        Heat: 0.9
+  - type: HideLayerClothing
+    layers:
+      Hair: HEAD
+      Snout: HEAD
+  - type: BreathMask
+
+- type: entity
+  parent: ClothingHeadBase
+  id: ClothingHeadHelmetOverwatch
+  name: overwatch hat
+  description: An armored hard hat. Provides the best of both worlds in both protection & utility - perfect for the engineer on the frontlines.
+  components:
+  - type: Sprite
+    sprite: _Citadel/Clothing/Head/Hardsuithelmet/overwatch.rsi
+  - type: Clothing
+    sprite: _Citadel/Clothing/Head/Hardsuithelmet/overwatch.rsi
+  - type: IngestionBlocker
+  - type: TemperatureProtection
+    heatingCoefficient: 0.01
+    coolingCoefficient: 0.2
+  - type: FireProtection
+    reduction: 0.2
+  - type: PressureProtection
+    highPressureMultiplier: 0.25
+    lowPressureMultiplier: 1000
+  - type: IdentityBlocker
+  - type: Tag
+    tags:
+    - WhitelistChameleon
+    - CorgiWearable
+    - FullCovered
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.9
+        Slash: 0.9
+        Piercing: 0.9
+        Heat: 0.9
+  - type: HideLayerClothing
+    layers:
+      Hair: HEAD
+      Snout: HEAD
+  - type: BreathMask
+
+- type: entity
+  parent: ClothingHeadBase
+  id: ClothingHeadHelmetOverwatchRed
+  name: overwatch hat
+  description: An armored hard hat. Provides the best of both worlds in both protection & utility - perfect for the engineer on the frontlines.
+  components:
+  - type: Sprite
+    sprite: _Citadel/Clothing/Head/Hardsuithelmet/overwatchred.rsi
+  - type: Clothing
+    sprite: _Citadel/Clothing/Head/Hardsuithelmet/overwatchred.rsi
+  - type: IngestionBlocker
+  - type: TemperatureProtection
+    heatingCoefficient: 0.01
+    coolingCoefficient: 0.2
+  - type: FireProtection
+    reduction: 0.2
+  - type: PressureProtection
+    highPressureMultiplier: 0.25
+    lowPressureMultiplier: 1000
+  - type: IdentityBlocker
+  - type: Tag
+    tags:
+    - WhitelistChameleon
+    - CorgiWearable
+    - FullCovered
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.9
+        Slash: 0.9
+        Piercing: 0.9
+        Heat: 0.9
+  - type: HideLayerClothing
+    layers:
+      Hair: HEAD
+      Snout: HEAD
+  - type: BreathMask
+
+- type: entity
+  parent: ClothingHeadBase
+  id: ClothingHeadHelmetOverwatchWhite
+  name: overwatch hat
+  description: An armored hard hat. Provides the best of both worlds in both protection & utility - perfect for the engineer on the frontlines.
+  components:
+  - type: Sprite
+    sprite: _Citadel/Clothing/Head/Hardsuithelmet/overwatchwhite.rsi
+  - type: Clothing
+    sprite: _Citadel/Clothing/Head/Hardsuithelmet/overwatchwhite.rsi
+  - type: IngestionBlocker
+  - type: TemperatureProtection
+    heatingCoefficient: 0.01
+    coolingCoefficient: 0.2
+  - type: FireProtection
+    reduction: 0.2
+  - type: PressureProtection
+    highPressureMultiplier: 0.25
+    lowPressureMultiplier: 1000
+  - type: IdentityBlocker
+  - type: Tag
+    tags:
+    - WhitelistChameleon
+    - CorgiWearable
+    - FullCovered
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.9
+        Slash: 0.9
+        Piercing: 0.9
+        Heat: 0.9
+  - type: HideLayerClothing
+    layers:
+      Hair: HEAD
+      Snout: HEAD
+  - type: BreathMask
+
+- type: entity
+  parent: ClothingHeadBase
+  id: ClothingHeadHatCWUBioboiler
+  name: radiation hood
+  description: A hood of the hazmat suit, designed for protection from high radioactivity.
+  components:
+  - type: Sprite
+    sprite: _Citadel/Clothing/Head/Hats/bio_boiler.rsi
+  - type: Clothing
+    sprite: _Citadel/Clothing/Head/Hats/bio_boiler.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Heat: 0.95
+        Radiation: 0.65
+  - type: IdentityBlocker
+  - type: BreathMask
+  - type: HideLayerClothing
+    slots:
+    - Hair
+    - Snout
+    - HeadTop
+    - HeadSide
+  - type: Tag
+    tags:
+    - HamsterWearable
+    - TopCovered
+    - WhitelistChameleon
+
+- type: entity
+  parent: ClothingHeadBase
+  id: ClothingHeadHatCWUCleanup
+  name: radiation hood
+  description: A hood of the hazmat suit, designed for protection from high radioactivity.
+  components:
+  - type: Sprite
+    sprite: _Citadel/Clothing/Head/Hats/cleanup.rsi
+  - type: Clothing
+    sprite: _Citadel/Clothing/Head/Hats/cleanup.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Heat: 0.95
+        Radiation: 0.65
+  - type: IdentityBlocker
+  - type: BreathMask
+  - type: HideLayerClothing
+    slots:
+    - Hair
+    - Snout
+    - HeadTop
+    - HeadSide
+  - type: Tag
+    tags:
+    - HamsterWearable
+    - TopCovered
+    - WhitelistChameleon
+
+- type: entity
+  parent: ClothingHeadBase
+  id: ClothingHeadHatCWUengi
+  name: radiation hood
+  description: A hood of the hazmat suit, designed for protection from high radioactivity.
+  components:
+  - type: Sprite
+    sprite: _Citadel/Clothing/Head/Hats/cwuengi.rsi
+  - type: Clothing
+    sprite: _Citadel/Clothing/Head/Hats/cwuengi.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Heat: 0.95
+        Radiation: 0.65
+  - type: IdentityBlocker
+  - type: BreathMask
+  - type: HideLayerClothing
+    slots:
+    - Hair
+    - Snout
+    - HeadTop
+    - HeadSide
+  - type: Tag
+    tags:
+    - HamsterWearable
+    - TopCovered
+    - WhitelistChameleon
+
+- type: entity
+  parent: ClothingHeadBase
+  id: ClothingHeadHatCWUscientist
+  name: radiation hood
+  description: A hood of the hazmat suit, designed for protection from high radioactivity.
+  components:
+  - type: Sprite
+    sprite: _Citadel/Clothing/Head/Hats/scientist.rsi
+  - type: Clothing
+    sprite: _Citadel/Clothing/Head/Hats/scientist.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Heat: 0.95
+        Radiation: 0.65
+  - type: IdentityBlocker
+  - type: BreathMask
+  - type: HideLayerClothing
+    slots:
+    - Hair
+    - Snout
+    - HeadTop
+    - HeadSide
+  - type: Tag
+    tags:
+    - HamsterWearable
+    - TopCovered
+    - WhitelistChameleon
+

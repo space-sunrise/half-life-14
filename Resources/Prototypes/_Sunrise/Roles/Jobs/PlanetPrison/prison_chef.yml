@@ -1,0 +1,34 @@
+﻿- type: job
+  id: PrisonChef
+  name: job-name-prison-chef
+  description: job-description-prison-chef
+  playTimeTracker: JobPrisonChef
+  startingGear: ChefGear
+  requirements:
+  - !type:RoleTimeRequirement
+    role: JobChef
+    time: 7200 #2 hrs
+  icon: "JobIconPrisonChef"
+  overrideConsoleVisibility: false
+  supervisors: job-supervisors-head-of-prison
+  alwaysUseSpawner: true
+  canBeAntag: false
+  displayWeight: 50
+  access:
+  - Service
+  - Maintenance
+  - Kitchen
+  - Hydroponics
+  - Bar
+
+- type: chameleonOutfit
+  id: PrisonChefChameleonOutfit
+  job: PrisonChef
+  equipment:
+    head: ClothingHeadHatChef
+    eyes: ClothingEyesGlassesCheapSunglasses
+    mask: ClothingMaskItalianMoustache
+    neck: ClothingNeckScarfStripedBrown
+    outerClothing: ClothingOuterJacketChef
+    gloves: ClothingHandsGlovesColorWhite
+    shoes: ClothingShoesChef

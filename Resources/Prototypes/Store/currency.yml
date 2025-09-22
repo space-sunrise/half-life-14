@@ -1,0 +1,45 @@
+- type: currency
+  id: Telecrystal
+  displayName: store-currency-display-telecrystal
+  cash:
+    1: Telecrystal1
+  canWithdraw: true
+
+- type: currency
+  id: Bluecrystal
+  displayName: store-currency-display-bluecrystal
+  cash:
+    1: Bluecrystal1
+  canWithdraw: true
+
+- type: currency
+  id: Crystallite
+  displayName: store-currency-display-crystallite
+  cash:
+    1: Crystallite1
+  canWithdraw: true
+
+- type: currency
+  id: StolenEssence
+  displayName: store-currency-display-stolen-essence
+  canWithdraw: false
+
+- type: currency
+  id: BloodEssence
+  displayName: store-currency-display-blood-essence
+  canWithdraw: false
+
+- type: currency
+  id: SiliconMemory
+  displayName: store-currency-display-silicon-memory
+  canWithdraw: false
+
+- type: currency
+  id: WizCoin
+  displayName: store-currency-display-wizcoin
+  canWithdraw: false
+
+#debug
+- type: currency
+  id: DebugDollar
+  displayName: store-currency-display-debugdollar

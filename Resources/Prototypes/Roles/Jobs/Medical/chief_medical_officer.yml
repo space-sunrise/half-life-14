@@ -1,0 +1,63 @@
+# Best job.
+
+- type: job
+  id: ChiefMedicalOfficer
+  name: job-name-cmo
+  description: job-description-cmo
+  playTimeTracker: JobChiefMedicalOfficer
+  requirements:
+    - !type:RoleTimeRequirement
+      role: JobChemist
+      time: 9000 #2.5 hrs
+    - !type:RoleTimeRequirement
+      role: JobMedicalDoctor
+      time: 18000 #5 hrs
+    - !type:DepartmentTimeRequirement
+      department: Medical
+      time: 36000 #10 hrs
+  weight: 10
+  startingGear: CMOGear
+  icon: "JobIconChiefMedicalOfficer"
+  supervisors: job-supervisors-captain
+  canBeAntag: true # Sunrise-Edit
+  radioBold: true # Sunrise-Edit
+  displayWeight: 60 # Sunrise-Edit
+  access:
+  - Medical
+  - Command
+  - Maintenance
+  - Chemistry
+  - ChiefMedicalOfficer
+  - Brig
+  - Cryogenics
+  special:
+  - !type:AddImplantSpecial
+    implants: [ MindShieldImplant, TrackingImplant, DeathRattleImplantBlueShield ]
+  - !type:AddComponentSpecial
+    components:
+      - type: CommandStaff
+  speciesBlacklist:
+  - Vox # Sunrise-Edit
+
+- type: startingGear
+  id: CMOGear
+  equipment:
+    id: CMOPDA
+    ears: ClothingHeadsetCMO
+    belt: ClothingBeltMedicalFilled
+  storage:
+    back:
+    - Flash
+    - Telebaton # Sunrise-Edit
+
+- type: chameleonOutfit
+  id: ChiefMedicalOfficerChameleonOutfit
+  job: ChiefMedicalOfficer
+  hasMindShield: true
+  equipment:
+    head: ClothingHeadHatBeretCmo
+    eyes: ClothingEyesHudMedical
+    mask: ClothingMaskSterile
+    neck: ClothingCloakCmo
+    outerClothing: ClothingOuterCoatLabCmo
+    gloves: ClothingHandsGlovesNitrile
